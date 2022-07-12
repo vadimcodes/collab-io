@@ -1,0 +1,107 @@
+// Общие стили
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --color-primary: #545479;
+  --color-accent: #3F53D8; // цвет акцент
+  --color-accent--hover: #2f42c0;
+  --color-basic: #080829; // для текста
+  --color-bg: #fff;
+}
+
+body {
+  font-family: 'PlusJakartaSans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-basic);
+  background-color: var(--color-bg);
+  // overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1250px;
+  padding: 0 25px;
+  // overflow: hidden;
+}
+
+.title {
+  font-size: 42px;
+  line-height: 160%;
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--color-primary);
+  line-height: 160%;
+  letter-spacing: 0.36px;
+}
+
+.descr {
+  color: var(--color-basic);
+  letter-spacing: 0.36px;
+  line-height: 160%;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 20px 38px;
+  border-radius: 14px;
+  letter-spacing: 0.4px;
+  line-height: 20px;
+  transition: background-color .17s ease-in-out;
+}
+
+.btn--light {
+  background-color: var(--color-bg);
+  color: #080829;
+  border: 1px solid rgba(8, 8, 41, 0.2);
+}
+
+.btn--light:hover {
+  background-color: rgb(248, 248, 248);
+}
+
+.btn--accent {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.btn--accent:hover {
+  background-color: var(--color-accent--hover);
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+.link-reset {
+  text-decoration: none;
+  color: var(--color-basic);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+}
